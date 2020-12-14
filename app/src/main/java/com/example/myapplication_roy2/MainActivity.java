@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String VIDEO_ID = "CQ6dbUmU__o";          //video1
     public static final String VIDEO_ID2 = "bMirF_WKEQA";         //video2
     public static final String VIDEO_ID3 = "zZECV1OYzL0";         //video3
-    public static final String VIDEO_ID4 = "" +
-            "";         //video4
+    public static final String VIDEO_ID4 = "UWC8kDkv3Hg";         //video4
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -195,29 +194,29 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //
-    //    @Override
-    //    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-    //
-    //        switch (item.getItemId()) {
-    //            case R.id.top:
-    //                Intent i = new Intent(getApplication(), WebActivity.class);
-    //                startActivity(i);
-    //                break;
-    //
-    //            case R.id.store:
-    //                Intent i2 = new Intent(getApplication(), StoreActivity.class);
-    //                startActivity(i2);
-    //                break;
-    //
-    //            case R.id.contact:
-    //                Intent i3 = new Intent(getApplication(), ContactActivity.class);
-    //                startActivity(i3);
-    //                break;
-    //        }
-    //
-    //        Log.i("log", "onCreateOptionsItemSelected");
-    //
-    //        return true;
-    //   }
+
+        @Override
+        public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+            switch (item.getItemId()) {
+                case R.id.top:
+                    Intent i = new Intent(getApplication(), WebActivity.class);
+                    startActivity(i);
+                    break;
+
+                case R.id.store:
+                    Intent i2 = new Intent(getApplication(), StoreActivity.class);
+                    startActivity(i2);
+                    break;
+
+                case R.id.contact:
+                    Intent i3 = new Intent(getApplication(), ContactActivity.class);
+                    startActivity(i3);
+                    break;
+            }
+
+            Log.i("log", "onCreateOptionsItemSelected");
+
+            return true;
+       }
 }
