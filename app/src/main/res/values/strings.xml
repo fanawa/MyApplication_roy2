@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">My Application_roy2</string>
     <string name="roy">Roy Hargrove</string>
-    <string name="roy2">- Roy Hargrove</string>
+    <string name="roy2">1969 - 2018</string>
+    <string name="roy3">- Roy Hargrove</string>
+
     <string name="top">TOP</string>
     <string name="store">STORE</string>
     <string name="contact">CONTACT</string>

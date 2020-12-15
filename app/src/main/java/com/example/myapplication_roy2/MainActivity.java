@@ -25,10 +25,17 @@ public class MainActivity extends AppCompatActivity {
     public static final String API_KEY2 = "AIzaSyCmS-gc83nVmJ7jNN7w9yPbGyEqcRdFHqM";
     public static final String API_KEY3 = "AIzaSyC3l0Lg5WF0wrvkm6aHzy2GZEkGPn03zf0";
     public static final String API_KEY4 = "AIzaSyAJ77vDsBTCXGAFWA8uQeZikOpYmvu_CJo";
-    public static final String VIDEO_ID = "CQ6dbUmU__o";          //video1
-    public static final String VIDEO_ID2 = "bMirF_WKEQA";         //video2
-    public static final String VIDEO_ID3 = "zZECV1OYzL0";         //video3
-    public static final String VIDEO_ID4 = "UWC8kDkv3Hg";         //video4
+
+    public static final String VIDEO_ID = "CQ6dbUmU__o";          //Strasbourg/St.Denis
+    public static final String VIDEO_ID2 = "bMirF_WKEQA";         //Top of My Head
+    public static final String VIDEO_ID3 = "zZECV1OYzL0";          //Liquid Street
+    public static final String VIDEO_ID4 = "UWC8kDkv3Hg";         //Una Mas
+    public static final String VIDEO_ID5 = "ndAyMMOqWts&t=19s";   //Earfood
+    public static final String VIDEO_ID6 = "GdVSzwDyptg";         //The RH Factor -North Sea Jazz Festival 2009
+    public static final String VIDEO_ID7 = "-7bopG7X7qY";         //From The Top Of My Head - Jazz en Tête 2017
+    public static final String VIDEO_ID8 = "zU9kT74vBs8";         //Roy Hargrove Interview - May 2017
+    public static final String VIDEO_ID9 = "YxVRDK6KImk";         //HARGROVE -A Film by Eliane Henri: FIRST LOOK
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                                         YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
 
                                 if (!wasRestored) {
-                                    youTubePlayer.cueVideo(VIDEO_ID);
+                                    youTubePlayer.cueVideo(VIDEO_ID9);
                                     //                                    youTubePlayer.cueVideo(VIDEO_ID2);
 
                                     Log.i("log", "onInitializationSuccess");
@@ -146,38 +153,38 @@ public class MainActivity extends AppCompatActivity {
         //video3　ここまで
 
         //video4
-        YouTubePlayerFragment youTubePlayerFragment4 = (YouTubePlayerFragment) getFragmentManager()
-                .findFragmentById(R.id.youtubeplayerfragment4);
-
-        youTubePlayerFragment4.initialize
-                (
-                        API_KEY4,
-                        new YouTubePlayer.OnInitializedListener() {
-                            @Override
-                            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
-                                youTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION |
-                                        YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
-
-                                if (!wasRestored) {
-                                    youTubePlayer.cueVideo(VIDEO_ID4);
-
-                                    Log.i("log", "onInitializationSuccess4");
-                                }
-                            }
-
-                            @Override
-                            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult error) {
-                                final int REQUEST_CODE = 1;
-
-                                if (error.isUserRecoverableError()) {
-                                    error.getErrorDialog(MainActivity.this, REQUEST_CODE).show();
-                                } else {
-                                    String errorMessage = String.format("There was an error initializing the YoutubePlayer (%1$s)", error.toString());
-                                    Toast.makeText(MainActivity.this, errorMessage, Toast.LENGTH_LONG).show();
-                                }
-                            }
-                        }
-                );
+//        YouTubePlayerFragment youTubePlayerFragment4 = (YouTubePlayerFragment) getFragmentManager()
+//                .findFragmentById(R.id.youtubeplayerfragment4);
+//
+//        youTubePlayerFragment4.initialize
+//                (
+//                        API_KEY4,
+//                        new YouTubePlayer.OnInitializedListener() {
+//                            @Override
+//                            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
+//                                youTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION |
+//                                        YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
+//
+//                                if (!wasRestored) {
+//                                    youTubePlayer.cueVideo(VIDEO_ID6);
+//
+//                                    Log.i("log", "onInitializationSuccess4");
+//                                }
+//                            }
+//
+//                            @Override
+//                            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult error) {
+//                                final int REQUEST_CODE = 1;
+//
+//                                if (error.isUserRecoverableError()) {
+//                                    error.getErrorDialog(MainActivity.this, REQUEST_CODE).show();
+//                                } else {
+//                                    String errorMessage = String.format("There was an error initializing the YoutubePlayer (%1$s)", error.toString());
+//                                    Toast.makeText(MainActivity.this, errorMessage, Toast.LENGTH_LONG).show();
+//                                }
+//                            }
+//                        }
+//                );
         //video4　ここまで
 
     }
