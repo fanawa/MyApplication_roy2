@@ -222,13 +222,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
        }
     public void callMailer() {
-        String[] addresses = {"xxx@yyy.zzz"};// 複数のアドレスを入れらる
+        String[] addresses = {"estate@royhargroveofficial.com"};// 複数のアドレスを入れらる
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
-        intent.putExtra(Intent.EXTRA_SUBJECT, "test mail");
-        intent.putExtra(Intent.EXTRA_TEXT, "本文です");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "");
+        intent.putExtra(Intent.EXTRA_TEXT, "");
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

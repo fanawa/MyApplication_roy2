@@ -59,11 +59,37 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+            <TextView
+                android:layout_width="352dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:alpha="0.7"
+                android:background="#090909"
+                android:backgroundTint="#070707"
+                android:text="@string/words4"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHighlight="#A6FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
             <fragment
                 android:id="@+id/youtubeplayerfragment2"
                 android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                 android:layout_width="match_parent"
                 android:layout_height="256dp" />
+
+            <TextView
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/words3"
+                android:alpha="0.7"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
             <fragment
                 android:id="@+id/youtubeplayerfragment3"
@@ -78,68 +104,28 @@
 
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="321dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
+                    android:text="@string/words1"
+                    android:alpha="0.7"
+                    android:textAlignment="textStart"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="245dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="right|top"
                     android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
+                    android:text="@string/roy2"
+                    android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:text="This is a YoutubePlayerFragment example"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textSize="18sp"
+                    android:alpha="0.5"
+                    android:textStyle="italic" />
 
             </LinearLayout>
 
@@ -149,18 +135,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="256dp" />
 
-            <ScrollView
-                android:layout_width="0dp"
-                android:layout_height="369dp"
-                android:layout_marginTop="136dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginRight="1dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/youtubeplayerfragment">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="515dp"
+                app:srcCompat="@drawable/roy2" />
 
-            </ScrollView>
         </LinearLayout>
     </ScrollView>
 
