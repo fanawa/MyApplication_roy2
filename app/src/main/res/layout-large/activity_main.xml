@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0B0B"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="viewEnd">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="418dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/roy3" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#0E0E0E"
+                android:paddingLeft="55dp"
+                android:text="@string/roy"
+                android:textAlignment="viewEnd"
+                android:textColor="#FBF6F6"
+                android:textSize="46sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:layout_width="430dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top"
+                android:alpha="0.5"
+                android:text="@string/roy2"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal|italic" />
+
+            <fragment
+                android:id="@+id/youtubeplayerfragment"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:layout_width="490dp"
+                android:layout_height="211dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60sp"
+                android:alpha="0.7"
+                android:background="#090909"
+                android:backgroundTint="#070707"
+                android:gravity="center"
+                android:text="@string/words4"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHighlight="#A6FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <fragment
+                android:id="@+id/youtubeplayerfragment2"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <TextView
+                android:layout_width="490dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:alpha="0.7"
+                android:text="@string/words3"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <fragment
+                android:id="@+id/youtubeplayerfragment3"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <!--            <fragment-->
+            <!--                android:id="@+id/youtubeplayerfragment4"-->
+            <!--                android:name="com.google.android.youtube.player.YouTubePlayerFragment"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="256dp" />-->
+
+            <TextView
+                android:layout_width="490dp"
+                android:layout_height="218dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:alpha="0.7"
+                android:text="@string/words1"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="766dp"
+                android:layout_height="630dp"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                app:srcCompat="@drawable/roy6" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
