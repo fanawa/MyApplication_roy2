@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".StoreActivity">
 
     <WebView
@@ -22,6 +23,7 @@
         android:layout_marginBottom="16dp"
         android:onClick="btnClose_onclick"
         android:text="CLOSE"
+        android:textColor="@color/white"
         app:backgroundTint="#141313"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

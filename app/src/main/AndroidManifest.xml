@@ -14,9 +14,11 @@
 
         <activity android:name=".WebActivity"/>
         <activity android:name=".StoreActivity"/>
-        <activity android:name=".ContactActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ContactActivity">
+        </activity>
 
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
