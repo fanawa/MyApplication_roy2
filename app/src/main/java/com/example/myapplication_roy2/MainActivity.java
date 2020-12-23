@@ -84,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                 );
         //video1 ここまで
 
-
         //video2
         YouTubePlayerFragment youTubePlayerFragment2 = (YouTubePlayerFragment) getFragmentManager()
                 .findFragmentById(R.id.youtubeplayerfragment2);
@@ -164,40 +163,6 @@ public class MainActivity extends AppCompatActivity {
                 );
         //video3　ここまで
 
-        //video4
-//        YouTubePlayerFragment youTubePlayerFragment4 = (YouTubePlayerFragment) getFragmentManager()
-//                .findFragmentById(R.id.youtubeplayerfragment4);
-//
-//        youTubePlayerFragment4.initialize
-//                (
-//                        API_KEY4,
-//                        new YouTubePlayer.OnInitializedListener() {
-//                            @Override
-//                            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
-//                                youTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION |
-//                                        YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
-//
-//                                if (!wasRestored) {
-//                                    youTubePlayer.cueVideo(VIDEO_ID6);
-//
-//                                    Log.i("log", "onInitializationSuccess4");
-//                                }
-//                            }
-//
-//                            @Override
-//                            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult error) {
-//                                final int REQUEST_CODE = 1;
-//
-//                                if (error.isUserRecoverableError()) {
-//                                    error.getErrorDialog(MainActivity.this, REQUEST_CODE).show();
-//                                } else {
-//                                    String errorMessage = String.format("There was an error initializing the YoutubePlayer (%1$s)", error.toString());
-//                                    Toast.makeText(MainActivity.this, errorMessage, Toast.LENGTH_LONG).show();
-//                                }
-//                            }
-//                        }
-//                );
-        //video4　ここまで
 
     }
 
@@ -213,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-
 
         @Override
         public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -240,19 +204,20 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
        }
+
+       //メール設定
     public void callMailer() {
         String[] addresses = {"estate@royhargroveofficial.com"};// 複数のアドレスを入れらる
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
-        intent.putExtra(Intent.EXTRA_SUBJECT, "");
-        intent.putExtra(Intent.EXTRA_TEXT, "");
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);   //送信先アドレス（デフォルト）
+        intent.putExtra(Intent.EXTRA_SUBJECT, "");  //件名（デフォルト）
+        intent.putExtra(Intent.EXTRA_TEXT, "");     //内容（デフォルト）
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
-
     }
 
 }

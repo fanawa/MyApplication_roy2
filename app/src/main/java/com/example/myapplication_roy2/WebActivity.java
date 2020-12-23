@@ -11,6 +11,8 @@ import android.webkit.WebView;
 
 public class WebActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
